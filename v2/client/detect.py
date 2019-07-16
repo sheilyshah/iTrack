@@ -8,8 +8,8 @@ import numpy as np
 def init_cv():
     """loads all of cv2 tools"""
     face_detector = cv2.CascadeClassifier(
-        os.path.join("Classifiers", "haar", "haarcascade_frontalface_default.xml"))
-    eye_detector = cv2.CascadeClassifier(os.path.join("Classifiers", "haar", 'haarcascade_eye.xml'))
+        os.path.join("classifiers", "haarcascade_frontalface_default.xml"))
+    eye_detector = cv2.CascadeClassifier(os.path.join("classifiers", 'haarcascade_eye.xml'))
     detector_params = cv2.SimpleBlobDetector_Params()
     detector_params.filterByArea = True
     detector_params.maxArea = 1500
